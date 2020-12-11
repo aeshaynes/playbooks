@@ -1,0 +1,4 @@
+---
+- include: ./epel.yml
+- include: ./packages.yml
+- include: ./diskusage.yml

@@ -1,0 +1,9 @@
+---
+- name: Install disk usage messages
+  become: true
+  copy:
+        src: ../templates/diskusage.sh
+        dest: /etc/profile.d/diskusage.sh
+        owner: root
+        group: root
+        mode: "633"

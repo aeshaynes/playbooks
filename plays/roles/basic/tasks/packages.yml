@@ -1,0 +1,11 @@
+---
+- name: Install some useful packages
+  package:
+        name: "{{ item }}"
+        state: installed
+  loop:
+        - git
+        - tmux
+        - vim
+        - net-tools
+
