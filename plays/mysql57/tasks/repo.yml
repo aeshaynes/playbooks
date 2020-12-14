@@ -1,0 +1,7 @@
+---
+- name: add mysql repo
+  yum_repository:
+        name: mysql-community.repo
+        description: MySQL 5.7 Community Server
+        baseurl: http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
+        gpgcheck: no
