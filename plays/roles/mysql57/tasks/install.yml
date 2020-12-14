@@ -1,0 +1,7 @@
+---
+- name: Install mysql 
+  package:
+        name: "{{ item }}"
+        state: installed
+  loop:
+        - mysql-community-server
